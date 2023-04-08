@@ -1,12 +1,2 @@
 # Recipe-Recommendation-System
 The above code is a recipe recommendation system that utilizes the k-nearest neighbors (KNN) algorithm to provide personalized recipe suggestions to users. The code is written in Python and utilizes popular data analysis and machine learning libraries such as pandas, numpy, and scikit-learn.
-
-The code starts by loading recipe data from a CSV file into a pandas DataFrame. It then prompts the user to input their preferences for tags, ingredients, diet restrictions, and minimum rating. Based on these inputs, the code filters the recipes in the DataFrame using various filtering techniques such as tag and ingredient matching, case-insensitive diet restriction search, and minimum rating comparison.
-
-After filtering, the code extracts features for KNN, which in this case is just the recipe ratings, and fits a KNN model using the NearestNeighbors class from scikit-learn. The number of neighbors (k) to consider is automatically determined based on the number of filtered recipes, ensuring a reasonable number of neighbors for similarity calculation.
-
-Next, the code calculates the distances and indices of the k nearest neighbors for each recipe in the filtered DataFrame using the KNN model. The recipes are then sorted by rating in descending order, resulting in a ranked list of recommended recipes. The code displays the recommended recipes along with their various attributes such as recipe name, instructions, minutes, nutrition value, description, ingredients, and number of instructions.
-
-The code also includes additional functionalities compared to existing codes. It allows users to search for recipes based on keywords or tags, providing a more flexible and user-friendly way to find recipes of interest. The code also handles user input in a robust manner, accommodating multiple tags and ingredients separated by commas and converting them into lists for filtering. It also provides modularity in the code structure, making it easy to maintain and update in the future.
-
-In summary, the above code is a comprehensive recipe recommendation system that offers advanced filtering, user input handling, CSV data loading, recipe similarity calculation, recipe information display, recipe recommendation output, recipe search, and code modularity as additional functionalities compared to existing codes. It can be used as a foundation for building more sophisticated recipe recommendation systems for various culinary applications.
